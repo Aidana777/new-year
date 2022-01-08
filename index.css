@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,700;1,700&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root{
+  --color:#fff;
+  --background-color: #19849b;
+  --background: #E5E5E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.header {
+  background-color: #19849b;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+.header-title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  
+}
+.logo__img{
+  float: left;
+  padding: 3px;
+  margin: 25px;
+}
+.container{
+  background: #272A2F;
+ 
+}
+
+.title{
+ padding: 30px;
+  color: #fff;
+
+}
+.pod-title{
+  width: 900px;
+  color: #fff;
+ margin: 20px;
+  
+}
+.text{
+  color: #fff;
+  width: 1100px;
+  padding: 25px;
+  letter-spacing: 1px;
+}
+button{
+padding: 15px 10px;
+color: #fff;
+border: 1px solid ;
+background: #272A2F;
+margin: 10px;
+}
+input{
+  width: 200px;
+height: 50px;
+margin: 10px;
+left: 0;
+top: 0;
+}
+.box-content{
+ padding: 10px;
+  color: var(--color);
+  display: none;
+  background: #272A2F;
+  box-shadow: var(--background);
+  
+}
+.box-text{
+  width: 800px;
+ 
+}
+.box-title{
+  padding: 10px;
+  text-align: left;
+}
+.gallery-title{
+  color: var(--color);
+  clear: both;
+  padding: 10px;
+
+}
+.gallerry-text{
+  color: var(--color);
+  width: 800px;
+  padding: 10px;
+}
+.gallery{
+ margin: 10px;
+}
+.gallery img{
+  padding: 10px;
+}
+
+.footer-item{
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  bottom: 80px;
+  right: 80px;
+  left: 40px;
+}
+.footer-title{
+  font-family: Ubuntu;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0.01em;
+color: var(--color);
+
+
+}
+.footer{
+  background: #19849B;
+
+
+}
+.telefon{
+  color: var(--color);
+  font-family: Ubuntu;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.01em;
+
+
+}
+.location{
+  color: #fff;
+  font-family: Ubuntu;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.01em;
+
+}
+.footer img{
+  position: relative;
+  left: 620px;
+  border-radius: 40px;
+}
+.footer-text{
+  text-align: center;
+  color: #fff;
+  background: #16758A;
+
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container-wrap {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;}
