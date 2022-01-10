@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,700;1,700&family=Ubuntu:wght@400;500;700&display=swap");
 
-:root{
-  --color:#fff;
+:root {
+  --color: #fff;
   --background-color: #19849b;
-  --background: #E5E5E5;
+  --background: #e5e5e5;
 }
 
 * {
@@ -26,84 +26,71 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
-  
 }
-.logo__img{
+.logo__img {
   float: left;
   padding: 3px;
   margin: 25px;
 }
-.container{
-  background: #272A2F;
- 
+.container {
+  background: #272a2f;
 }
 
-.title{
- padding: 30px;
+.title {
+  padding: 30px;
   color: #fff;
-
 }
-.pod-title{
+.pod-title {
   width: 900px;
   color: #fff;
- margin: 20px;
-  
+  margin: 20px;
 }
-.text{
+.text {
   color: #fff;
   width: 1100px;
   padding: 25px;
   letter-spacing: 1px;
 }
-button{
-padding: 15px 10px;
-color: #fff;
-border: 1px solid ;
-background: #272A2F;
-margin: 10px;
+button {
+  padding: 15px 10px;
+  color: #fff;
+  border: 1px solid;
+  background: #272a2f;
+  margin: 10px;
 }
-input{
+input {
   width: 200px;
-height: 50px;
-margin: 10px;
-left: 0;
-top: 0;
+  height: 50px;
+  margin: 10px;
+  left: 0;
+  top: 0;
 }
-.box-content{
- padding: 10px;
+.box-content {
+  padding: 10px;
   color: var(--color);
   display: none;
-  background: #272A2F;
+  background: #272a2f;
   box-shadow: var(--background);
-  
 }
-.box-text{
+.box-text {
   width: 800px;
- 
 }
-.box-title{
+.box-title {
   padding: 10px;
   text-align: left;
 }
-.gallery-title{
+.gallery-title {
   color: var(--color);
   clear: both;
   padding: 10px;
-
 }
-.gallerry-text{
+.gallerry-text {
   color: var(--color);
   width: 800px;
   padding: 10px;
 }
-.gallery{
- margin: 10px;
-}
-.gallery img{
-  padding: 10px;
-}
 
-.footer-item{
+.footer-item {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   position: relative;
@@ -111,53 +98,45 @@ top: 0;
   right: 80px;
   left: 40px;
 }
-.footer-title{
+.footer-title {
   font-family: Ubuntu;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: 25px;
-letter-spacing: 0.01em;
-color: var(--color);
-
-
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: var(--color);
 }
-.footer{
-  background: #19849B;
-
-
+.footer {
+  background: #19849b;
 }
-.telefon{
+.telefon {
   color: var(--color);
   font-family: Ubuntu;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0.01em;
-
-
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.01em;
 }
-.location{
+.location {
   color: #fff;
   font-family: Ubuntu;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0.01em;
-
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
 }
-.footer img{
+.footer img {
   position: relative;
   left: 620px;
   border-radius: 40px;
 }
-.footer-text{
+.footer-text {
   text-align: center;
   color: #fff;
-  background: #16758A;
-
+  background: #16758a;
 }
 .column {
   float: left;
@@ -166,8 +145,8 @@ letter-spacing: 0.01em;
 }
 
 .column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .column img:hover {
@@ -178,7 +157,6 @@ letter-spacing: 0.01em;
   display: table;
   clear: both;
 }
-
 
 .container-wrap {
   position: relative;
@@ -199,4 +177,45 @@ letter-spacing: 0.01em;
   right: 15px;
   color: white;
   font-size: 35px;
-  cursor: pointer;}
+  cursor: pointer;
+}
+.gallery-list{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.gallery-item{
+  display: block;
+  flex: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  z-index: 2;
+}
+.gallery-item img{
+  max-width: 100%;
+  height: auto;
+  transition: all.5s ease;
+}
+.gallery-item-hover.gallery-item-hover{
+  opacity: 1;
+}
+.gallery-item:hover img{
+  transform: scale(1.3) rotate(5deg) ;
+}
